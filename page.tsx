@@ -39,9 +39,12 @@ export default function HomePage() {
             </div>
             
             {/* Interactive placeholder navigation */}
-            <button className="mt-6 w-full bg-slate-900 hover:bg-red-600 text-white font-bold py-2 px-4 rounded border border-slate-800 hover:border-red-600 transition text-sm uppercase tracking-wider">
-              View Teams
-            </button>
+          <Link 
+  href={item.title === "CLASS AA" ? "/class-aa" : "#"} 
+  className="mt-6 block w-full text-center bg-slate-900 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded transition-colors"
+>
+  View Teams
+</Link>
           </div>
         ))}
       </div>
